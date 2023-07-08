@@ -17,14 +17,16 @@ ProductTag.init(
       references: {
         model: 'product',
         key: 'id',
-      }
+      },
+      onDelete: 'set null'
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'tag',
         key: 'id',
-      }
+      },
+      onDelete: 'set null'
 
     },
   },
